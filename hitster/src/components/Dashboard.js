@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
-const Player = ({ token }) => {
+
+const Dashboard = ({ token }) => {
     const [player, setPlayer] = useState(null);
     const [isPlaying, setIsPlaying] = useState(false);
     const [deviceId, setDeviceId] = useState(null);
@@ -8,6 +9,8 @@ const Player = ({ token }) => {
     const [playlistTracks, setPlaylistTracks] = useState([]); // Tracks der ausgewählten Playlist
     const [selectedTrack, setSelectedTrack] = useState(null); // Ausgewählter Track
     const [selectedPlaylist, setSelectedPlaylist] = useState(null); // Ausgewählte Playlist
+
+    const [players, setPlayers] = useState([]); // Spieler
 
     // Funktion, um die Playlists des Benutzers abzurufen
     useEffect(() => {
@@ -38,6 +41,7 @@ const Player = ({ token }) => {
                     const tracks = data.items.map((item) => ({
                         name: item.track.name,
                         uri: item.track.uri,
+                        releaseDate: item.track.album.release_date, // Das Erscheinungsjahr des Albums
                     }));
                     setPlaylistTracks(tracks); // Setzt die Tracks der ausgewählten Playlist
                 })
@@ -105,13 +109,64 @@ const Player = ({ token }) => {
         }).then(() => setIsPlaying(true));
     };
 
+    const randomSong = () => {
+        console.log(players);
+
+        // Kopiere die playlistTracks, um den Zustand korrekt zu aktualisieren
+        const updatedPlaylistTracks = [...playlistTracks];
+
+        // Gehe über alle Spieler
+        for (let i = 0; i < players.length; i++) {
+            const randomIndex = Math.floor(Math.random() * updatedPlaylistTracks.length);
+            const randomTrack = updatedPlaylistTracks[randomIndex];
+            console.log(randomTrack);
+
+            // Füge den zufälligen Track zur Playlist des Spielers hinzu
+            players[i].playlist.push(randomTrack);
+
+            // Entferne den Track aus der globalen Playlist
+            updatedPlaylistTracks.splice(randomIndex, 1);
+
+            console.log(updatedPlaylistTracks);
+
+        }
+        setPlaylistTracks(updatedPlaylistTracks);
+
+        // Setze den neuen Zustand der Playlist
+
+        // Setze den neuen Zustand der Spieler (optional, wenn du das auch aktualisieren möchtest)
+        setPlayers([...players]);
+    };
+
+
+
+    // Funktion, um einen neuen Spieler hinzuzufügen
+    const addPlayer = (playerId) => {
+        setPlayers((prevPlayers) => [
+            ...prevPlayers,
+            { id: playerId, isPlaying: false, playlist:[] },
+        ]);
+    };
+
+
+    const nextSong = () => {
+        const randomIndex = Math.floor(Math.random() * setPlaylistTracks.length);
+        const randomTrack = playlistTracks[randomIndex];
+        setSelectedTrack(randomTrack.uri);
+    };
+
     return (
         <div>
             <h1>Hitster Player</h1>
             <div>
+                <button onClick={() => addPlayer(`player-${players.length + 1}`)}>
+                    Add Player
+                </button>
+                <button onClick={nextSong}>Next</button>
                 <button onClick={playSong}>Play</button>
                 <button onClick={pauseSong}>Pause</button>
                 <button onClick={resumeSong}>Resume</button>
+                <button onClick={randomSong}>Random Song</button>
             </div>
 
             <div>
@@ -148,8 +203,38 @@ const Player = ({ token }) => {
                     ))}
                 </select>
             </div>
+            <div>
+                {/* Liste der Songs */}
+                <h2>Playlist Songs</h2>
+                <ul>
+                    {playlistTracks.map((track, index) => (
+                        <li key={index}>{track.name}
+                            {track.releaseDate}
+                        </li>
+                    ))}
+                </ul>
+            </div>
+            <div>
+                {/* Liste der Spieler */}
+                <h2>Players</h2>
+                <ul>
+                    {players.map((player) => (
+                        <li key={player.id}>
+                            {player.id} - {player.isPlaying ? 'Playing' : 'Paused'}
+                            <ul>
+                                {player.playlist.map((track, index) => (
+                                    <li key={index}>
+                                        {track.name}
+                                        {track.releaseDate}
+                                    </li>
+                                ))}
+                            </ul>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     );
 };
 
-export default Player;
+export default Dashboard;

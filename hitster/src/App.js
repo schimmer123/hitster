@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Login from './components/Login';
-import Player from './components/Player';
+import Dashboard from "./components/Dashboard";
 
 const App = () => {
     const [token, setToken] = useState(null);
@@ -17,7 +17,7 @@ const App = () => {
 
     return (
         <div>
-            {!token ? <Login /> : <Player token={token} />}
+            {!token ? <Login /> : <Dashboard token={token} />}
         </div>
     );
 };
