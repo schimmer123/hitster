@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6bbb48cd-538e-4ff6-afcf-ae870f05d686" name="Changes" comment="Projekt erstellung">
+      <change afterPath="$PROJECT_DIR$/hitster/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hitster/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hitster/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hitster/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hitster/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hitster/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hitster/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hitster/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hitster/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hitster/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hitster/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hitster/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hitster/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hitster/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hitster/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hitster/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hitster/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.routes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.spec.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2pRltz1EEkAUyb5ZDlIRxWc1jTe" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/hitster/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6bbb48cd-538e-4ff6-afcf-ae870f05d686" name="Changes" comment="" />
+      <created>1732736990018</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732736990018</updated>
+      <workItem from="1732736992458" duration="622000" />
+      <workItem from="1732737727653" duration="714000" />
+      <workItem from="1732819664952" duration="1441000" />
+      <workItem from="1732821636893" duration="4663000" />
+      <workItem from="1733085507442" duration="2222000" />
+      <workItem from="1735154978276" duration="150000" />
+      <workItem from="1735155131874" duration="29000" />
+    </task>
+    <task id="LOCAL-00001" summary="Projekt erstellung">
+      <created>1732737923324</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732737923324</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Projekt erstellung" />
+    <option name="LAST_COMMIT_MESSAGE" value="Projekt erstellung" />
+  </component>
+</project>
