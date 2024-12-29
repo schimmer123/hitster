@@ -3,13 +3,13 @@ import Login from './components/Login';
 import Dashboard from "./components/Dashboard";
 
 const App = () => {
-    const [token, setToken] = useState(null);
+    const [token, setToken] = useState<string | null>(null);
 
     useEffect(() => {
-        const hash = window.location.hash;
+        const hash: string = window.location.hash;
         if (hash) {
             const params = new URLSearchParams(hash.substring(1));
-            const accessToken = params.get('access_token');
+            const accessToken: string | null = params.get('access_token');
             setToken(accessToken);
             window.location.hash = ''; // Bereinige die URL
         }
